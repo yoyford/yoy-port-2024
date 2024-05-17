@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+:root {
+    --main-color: white;
+    --main-font:  "Poppins", sans-serif; 
+    --second-font:  "Syne", sans-serif;
+    --navbar-color: rgb(114, 114, 114);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    max-width: 1240px;
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 50px;
+    padding-right: 1px;
+
+}
+.text-logo{
+    font-size: 32.44px;
+    font-family: var(--second-font);
+    font-weight: 500;
+    margin-left: 40px;
+}
+.dot{
+    color: red;
+    transition: ease-in-out 0.5s;
+    
+}
+.dot:hover{
+    color: rgb(114, 114, 114);
+    
+}
+.info{
+    font-style: italic;
+    transition: ease-in-out 0.2s;
+}
+.info:hover{
+    color: rgb(255, 126, 126);
+
+}
+.navbar-ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-ul li{
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.navbar-ul li a{
+    text-decoration: none;
+    font-family: var(--second-font);
+    color: var(--navbar-color);
+    transition: ease-in-out 0.3s;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.navbar-ul li:nth-child(3){
+
+}
+.navbar-ul li:nth-child(1) a:hover {
+    background-color: rgb(187, 187, 187);
+}
+.navbar-ul li:nth-child(2) a:hover {
+    background-color: rgb(187, 187, 187);
+}
+.navbar-ul li:nth-child(3) a:hover {
+    background-color: rgb(58, 58, 58);
+    color: white;
+
+}
+.lets{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+.hero-h1{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 100px auto;
+    align-items: center;
+    text-align: center;
+
+}
+.hero-text{
+    font-family: var(--second-font);
+    font-size: 90px;
+}
+.hero-higlights{
+    background-color: rgb(245, 153, 153);
+}
+
+
+@media screen and (max-width: 541px) {
+    .navbar-ul{
+        display: none;
+        
+    }
+    .navbar{
+        padding: 6.5px;
+    }
+    .text-logo{
+        font-size: 20.44px;
+    }
+}
+@media screen and (max-width: 974px) {
+    .hero-text{
+        font-size: 55px;
+        margin: 1rem;
+    }
+    .navbar{
+        margin-right: 110px;
+    }
+}
+@media screen and (max-width: 592px) {
+    .hero-h1{
+        margin: 40px auto;
+    }
+    .hero-text{
+        font-size: 34px;
+        line-height: 3rem;
+
+    }
+    
+}
+@media screen and (max-width: 364px) {
+    .hero-h1{
+        margin: 40px auto;
+    }
+    .hero-text{
+        font-size: 30px;
+        line-height: 3rem;
+
+    }
+    .hero-h1{
+        margin: 10px;
+    }
+    
+}

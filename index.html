@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>yoyfab</title>
+    <link rel="icon" href="images/title.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        .hero-text > span {
+            animation: fade 1s ease-in-out forwards;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- nav -->
+        <nav class="navbar">
+            <h1 class="text-logo">yoy<span class="info">fab</span><span class="dot">.</span></h1>
+            <ul class="navbar-ul">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#" class="lets">Let's Talk</a></li>
+            </ul>
+        </nav>
+    <!-- hero section -->
+    <div class="hero-h1">
+        <h1 class="hero-text"><span id="helloText">HELLO</span>, MY NAME IS <span class="hero-higlights">FLORANTE  FABROA JR.</span> WEB DEVELOPER BASED IN POLA,PHILIPPINES</h1>
+    </div>
+
+    <script>
+        // Array of language options and their translations
+        const languages = [
+            { code: 'ph', text: "KAMUSTA, MY NAME IS FLORANTE FABROA JR. WEB DEVELOPER BASED IN POLA,PHILIPPINES" },
+            { code: 'en', text: "HELLO, MY NAME IS FLORANTE FABROA JR. WEB DEVELOPER BASED IN POLA,PHILIPPINES" },
+            { code: 'es', text: "HOLA, MI NOMBRE ES FLORANTE FABROA JR. DESARROLLADOR WEB CON BASE EN POLA, FILIPINAS" },
+            { code: 'fr', text: "BONJOUR, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
+            { code: 'jp', text: "こんにちは, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
+            // Add more language options as needed
+        ];
+
+        // Function to change the "HELLO" text to another language every 1 second with smooth fade animation
+        let currentIndex = 0;
+        function changeHelloText() {
+            const helloText = document.getElementById('helloText');
+            helloText.textContent = languages[currentIndex].text.split(',')[0]; // Only update the "HELLO" part
+            currentIndex = (currentIndex + 1) % languages.length;
+        }
+
+        // Call the function to change the text every 1 second
+        setInterval(changeHelloText, 2000);
+    </script>
+</body>
+</html>
