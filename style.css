@@ -22,8 +22,6 @@
     align-items: center;
     border: 1px solid rgb(207, 207, 207);
     border-radius: 50px;
-    padding-right: 1px;
-
 }
 .text-logo{
     font-size: 32.44px;
@@ -95,11 +93,13 @@
     margin: 100px auto;
     align-items: center;
     text-align: center;
+    
 
 }
 .hero-text{
     font-family: var(--second-font);
     font-size: 90px;
+    width: 100%;
 }
 .hero-higlights{
     background-color: rgb(245, 153, 153);

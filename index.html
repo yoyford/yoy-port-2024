@@ -35,8 +35,7 @@
     <!-- hero section -->
     <div class="hero-h1">
         <h1 class="hero-text"><span id="helloText">HELLO</span>, MY NAME IS <span class="hero-higlights">FLORANTE  FABROA JR.</span> WEB DEVELOPER BASED IN POLA,PHILIPPINES</h1>
-    </div>
-
+    
     <script>
         // Array of language options and their translations
         const languages = [
@@ -45,19 +44,18 @@
             { code: 'es', text: "HOLA, MI NOMBRE ES FLORANTE FABROA JR. DESARROLLADOR WEB CON BASE EN POLA, FILIPINAS" },
             { code: 'fr', text: "BONJOUR, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
             { code: 'jp', text: "こんにちは, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
-            // Add more language options as needed
         ];
-
-        // Function to change the "HELLO" text to another language every 1 second with smooth fade animation
         let currentIndex = 0;
         function changeHelloText() {
             const helloText = document.getElementById('helloText');
-            helloText.textContent = languages[currentIndex].text.split(',')[0]; // Only update the "HELLO" part
+            helloText.textContent = languages[currentIndex].text.split(',')[0]; 
             currentIndex = (currentIndex + 1) % languages.length;
         }
-
-        // Call the function to change the text every 1 second
         setInterval(changeHelloText, 2000);
     </script>
+</div>
+<div class="about-yoy">
+    
+</div>
 </body>
 </html>
