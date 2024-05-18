@@ -5,13 +5,16 @@
     --main-color: white;
     --main-font:  "Poppins", sans-serif; 
     --second-font:  "Syne", sans-serif;
-    --navbar-color: rgb(114, 114, 114);
+    --navbar-color: #727272;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: var(--second-font);
 }
 .navbar{
     max-width: 1240px;
@@ -67,9 +70,7 @@
     font-weight: 600;
     
 }
-.navbar-ul li:nth-child(3){
 
-}
 .navbar-ul li:nth-child(1) a:hover {
     background-color: rgb(187, 187, 187);
 }
@@ -102,7 +103,7 @@
     width: 100%;
 }
 .hero-higlights{
-    background-color: rgb(245, 153, 153);
+    background-color: #f59999;
 }
 
 
