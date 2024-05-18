@@ -49,6 +49,9 @@ body{
     color: rgb(255, 126, 126);
 
 }
+.container-menu{
+    display: none;
+}
 .navbar-ul{
     display: flex;
     flex-direction: row;
@@ -101,12 +104,21 @@ body{
     font-family: var(--second-font);
     font-size: 90px;
     width: 100%;
+    display: block;
 }
 .hero-higlights{
     background-color: #f59999;
 }
 
-
+@media screen and (max-width: 974px) {
+    .hero-text{
+        font-size: 55px;
+        margin: 1rem;
+    }
+    .navbar{
+        margin-right: 110px;
+    }
+}
 @media screen and (max-width: 541px) {
     .navbar-ul{
         display: none;
@@ -118,16 +130,13 @@ body{
     .text-logo{
         font-size: 20.44px;
     }
-}
-@media screen and (max-width: 974px) {
-    .hero-text{
-        font-size: 55px;
-        margin: 1rem;
-    }
-    .navbar{
-        margin-right: 110px;
+    .container-menu{
+        display: block;
+        visibility: visible;
+        margin-right: 20px;
     }
 }
+
 @media screen and (max-width: 592px) {
     .hero-h1{
         margin: 40px auto;
@@ -137,7 +146,7 @@ body{
         line-height: 3rem;
 
     }
-    
+
 }
 @media screen and (max-width: 364px) {
     .hero-h1{
@@ -151,5 +160,5 @@ body{
     .hero-h1{
         margin: 10px;
     }
-    
+
 }
