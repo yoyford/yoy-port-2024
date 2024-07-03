@@ -1,10 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 :root {
     --main-color: white;
-    --main-font:  "Poppins", sans-serif; 
-    --second-font:  "Syne", sans-serif;
+    --main-font: "Poppins", sans-serif; 
+    --second-font: "Syne", sans-serif;
     --navbar-color: #727272;
 }
 
@@ -13,57 +12,56 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: var(--second-font);
 }
-.navbar{
+.navbar {
     max-width: 1240px;
     margin: 10px auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgb(207, 207, 207);
+    border: 0px solid rgb(207, 207, 207);
     border-radius: 50px;
 }
-.text-logo{
+.text-logo {
     font-size: 32.44px;
     font-family: var(--second-font);
     font-weight: 500;
     margin-left: 40px;
 }
-.dot{
+.dot {
     color: red;
     transition: ease-in-out 0.5s;
-    
 }
-.dot:hover{
+.dot:hover {
     color: rgb(114, 114, 114);
-    
 }
-.info{
+.info {
     font-style: italic;
     transition: ease-in-out 0.2s;
 }
-.info:hover{
+.info:hover {
     color: rgb(255, 126, 126);
-
 }
-.container-menu{
+.container-menu {
+    display: none;
+    cursor: pointer;
+}
+.menuIcon {
     display: none;
 }
-.navbar-ul{
+.navbar-ul {
     display: flex;
     flex-direction: row;
 }
-.navbar-ul li{
+.navbar-ul li {
     list-style: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
 }
-
-.navbar-ul li a{
+.navbar-ul li a {
     text-decoration: none;
     font-family: var(--second-font);
     color: var(--navbar-color);
@@ -71,9 +69,7 @@ body{
     padding: 1rem;
     font-size: 16px;
     font-weight: 600;
-    
 }
-
 .navbar-ul li:nth-child(1) a:hover {
     background-color: rgb(187, 187, 187);
 }
@@ -83,82 +79,126 @@ body{
 .navbar-ul li:nth-child(3) a:hover {
     background-color: rgb(58, 58, 58);
     color: white;
-
 }
-.lets{
+.lets {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-
 }
-.hero-h1{
+.mobile-menu {
+    background: #dadada;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+.mobile-menu.active {
+    max-height: 200px; /* Adjust this value based on the height of your menu */
+}
+.mobile-menu ul {
+    list-style: none;
+    padding: 5px;
+    transition: ease-in-out 0.3s;
+}
+.mobile-menu ul li {
+    padding: 10px;
+}
+.mobile-menu ul a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+.mobile-menu ul li:hover {
+    color: white;
+    background-color: rgb(177, 177, 177);
+    width: 100%;
+}
+.hero-h1 {
     display: flex;
     justify-content: center;
     max-width: 1200px;
     margin: 100px auto;
     align-items: center;
     text-align: center;
-    
-
 }
-.hero-text{
+.hero-text {
     font-family: var(--second-font);
     font-size: 90px;
     width: 100%;
-    display: block;
 }
-.hero-higlights{
+.hero-highlights {
     background-color: #f59999;
 }
-
 @media screen and (max-width: 974px) {
-    .hero-text{
+    .hero-text {
         font-size: 55px;
         margin: 1rem;
     }
-    .navbar{
+    .navbar {
         margin-right: 110px;
     }
 }
 @media screen and (max-width: 541px) {
-    .navbar-ul{
+    .navbar-ul {
         display: none;
-        
     }
-    .navbar{
+    .navbar {
         padding: 6.5px;
+        border: none;
     }
-    .text-logo{
-        font-size: 20.44px;
+    .text-logo {
+        font-size: 22.44px;
     }
-    .container-menu{
+    .container-menu {
         display: block;
         visibility: visible;
         margin-right: 20px;
     }
-}
-
-@media screen and (max-width: 592px) {
-    .hero-h1{
-        margin: 40px auto;
+    .mobile-menu {
+        top: 31px;
     }
-    .hero-text{
-        font-size: 34px;
-        line-height: 3rem;
+    .mobile-menu-ul  {
+        
 
+    }
+    .mobile-menu-ul li a{
+        font-size: 25px;
+        margin-left: 30px;
+        
+
+    }
+}
+@media screen and (max-width: 592px) {
+    .hero-h1 {
+        margin: 50px auto;
+    }
+    .hero-text {
+        font-size: 34px;
+        width: 70%;
+        line-height: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #dot{
+        display: none;
     }
 
 }
 @media screen and (max-width: 364px) {
-    .hero-h1{
+    .hero-h1 {
         margin: 40px auto;
     }
-    .hero-text{
+    .hero-text {
         font-size: 30px;
         line-height: 3rem;
-
     }
-    .hero-h1{
+    .hero-h1 {
         margin: 10px;
     }
-
 }

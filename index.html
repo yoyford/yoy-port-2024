@@ -12,7 +12,6 @@
         .hero-text > span {
             animation: fade 1.5s ease-in-out forwards;
         }
-
         @keyframes fade {
             0% {
                 opacity: 0;
@@ -25,50 +24,33 @@
 </head>
 <body>
     <!-- nav -->
-        <nav class="navbar">
-            <h1 class="text-logo">yoy<span class="info">fab</span><span class="dot">.</span></h1>
-            <ul class="navbar-ul">
+    <nav class="navbar">
+        <h1 class="text-logo">yoy<span class="info">fab</span><span class="dot">.</span></h1>
+        <ul class="navbar-ul">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#" class="lets">Let's Talk</a></li>
+        </ul>
+        <div class="container-menu">
+            <i class="fa-solid fa-bars" id="menuIcon"></i> 
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-ul">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Works</a></li>
-                <li><a href="#" class="lets">Let's Talk</a></li>
+                <li><a href="#">Let's Talk</a></li>
             </ul>
-            <div class="container-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+        </div>
+    </nav>
     <!-- hero section -->
     <div class="hero-h1">
-        <h1 class="hero-text"><span id="helloText">HELLO</span>, MY NAME IS <span class="hero-higlights">FLORANTE  FABROA JR.</span> WEB DEVELOPER BASED IN POLA,PHILIPPINES</h1>
-        <div class="herro-button">
+        <h1 class="hero-text"><span id="helloText">HELLO</span><span id="dot">,</span> MY NAME IS <span class="hero-highlights">FLORANTE FABROA JR.</span> WEB DEVELOPER BASED IN POLA, PHILIPPINES</h1>
+        <div class="hero-button"></div>
     </div>
     <!-- about -->
     <div class="container-about">
-        <div class="about-yoy">
-
-
-
-
-
-        </div>
+        <div class="about-yoy"></div>
     </div>
-    <script>
-        // Array of language options and their translations
-        const languages = [
-            { code: 'ph', text: "KAMUSTA, MY NAME IS FLORANTE FABROA JR. WEB DEVELOPER BASED IN POLA,PHILIPPINES" },
-            { code: 'en', text: "HELLO, MY NAME IS FLORANTE FABROA JR. WEB DEVELOPER BASED IN POLA,PHILIPPINES" },
-            { code: 'es', text: "HOLA, MI NOMBRE ES FLORANTE FABROA JR. DESARROLLADOR WEB CON BASE EN POLA, FILIPINAS" },
-            { code: 'fr', text: "BONJOUR, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
-            { code: 'jp', text: "こんにちは, MON NOM EST FLORANTE FABROA JR. DÉVELOPPEUR WEB BASÉ À POLA, PHILIPPINES" },
-        ];
-        let currentIndex = 0;
-        function changeHelloText() {
-            const helloText = document.getElementById('helloText');
-            helloText.textContent = languages[currentIndex].text.split(',')[0]; 
-            currentIndex = (currentIndex + 1) % languages.length;
-        }
-        setInterval(changeHelloText, 2000);
-        </script>
-
-
 </body>
 </html>
