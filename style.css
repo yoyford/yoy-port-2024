@@ -41,6 +41,7 @@ body {
 .info {
     font-style: italic;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 .info:hover {
     color: rgb(255, 126, 126);
@@ -72,9 +73,11 @@ body {
 }
 .navbar-ul li:nth-child(1) a:hover {
     background-color: rgb(187, 187, 187);
+    color: #ffffff;
 }
 .navbar-ul li:nth-child(2) a:hover {
     background-color: rgb(187, 187, 187);
+    color: #ffffff;
 }
 .navbar-ul li:nth-child(3) a:hover {
     background-color: rgb(58, 58, 58);
@@ -121,7 +124,7 @@ body {
 .hero-h1 {
     display: flex;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 100px auto;
     align-items: center;
     text-align: center;
@@ -132,8 +135,35 @@ body {
     width: 100%;
 }
 .hero-highlights {
-    background-color: #f59999;
+    background-color: #f59999; 
 }
+.container-about{
+    max-width: 1240px;
+    margin: 250px auto;
+
+}
+#about-h1{
+    font-size: 50px;
+
+}
+.container-about p{
+    font-size: 18px;
+    padding: 5px 0px;
+
+}
+.about-info{
+    width: 40%;
+    line-height: 30px;
+}
+.about-yoy{
+    margin-left: 40px;
+}
+
+
+
+
+
+
 @media screen and (max-width: 974px) {
     .hero-text {
         font-size: 55px;
