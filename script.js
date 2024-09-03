@@ -14,6 +14,7 @@ function changeHelloText() {
 }
 setInterval(changeHelloText, 2000);
 
+// mobile button change
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menuIcon');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -26,6 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         if (window.innerWidth > 541) { // Adjust this value based on your media query breakpoint
             mobileMenu.classList.remove('active');
+        }
+    });
+});
+document.querySelectorAll('.navbar-ul a, .mobile-menu-ul a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
         }
     });
 });

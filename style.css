@@ -5,6 +5,10 @@
     --main-font: "Poppins", sans-serif; 
     --second-font: "Syne", sans-serif;
     --navbar-color: #727272;
+    --main-fontsize: 18px;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -65,7 +69,7 @@ body {
 .navbar-ul li a {
     text-decoration: none;
     font-family: var(--second-font);
-    color: var(--navbar-color);
+    color: #000000;
     transition: ease-in-out 0.3s;
     padding: 1rem;
     font-size: 16px;
@@ -82,10 +86,6 @@ body {
 .navbar-ul li:nth-child(3) a:hover {
     background-color: rgb(58, 58, 58);
     color: white;
-}
-.lets {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
 }
 .mobile-menu {
     background: #dadada;
@@ -140,24 +140,55 @@ body {
 .container-about{
     max-width: 1240px;
     margin: 250px auto;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 #about-h1{
     font-size: 50px;
-
+    margin-bottom: 24px;
 }
 .container-about p{
-    font-size: 18px;
+    font-size: var(--main-fontsize);
     padding: 5px 0px;
 
 }
 .about-info{
-    width: 40%;
+    width: 50%;
     line-height: 30px;
 }
 .about-yoy{
     margin-left: 40px;
+    align-items: flex-start;
 }
+.yoy-pic-info{
+    width: 400px;
+    height: auto;
+    margin-right: 24px;
+}
+.icons{
+    margin-top: 16px;
+
+}
+#github{
+    font-size: 31px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #333;
+}
+#linkedin{
+    font-size: 31px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: #333;
+    
+}
+#github:hover, #linkedin:hover{
+    color: rgb(95, 95, 95);
+    
+}
+
 
 
 
