@@ -184,11 +184,8 @@ body {
     height: auto;
     margin-right: 24px;
 }
-.yoy-pic{
-
-}
 .icons{
-    margin-top: 16px;
+    margin-top: 8px;
     margin-bottom: 24px;
 
 }
@@ -224,7 +221,7 @@ body {
     justify-content: space-evenly;
     flex-direction: row;
     gap: 30px;
-    margin-top: 24px;
+    margin-top: 8px;
 }
 #html{
     color: #E65100;
@@ -249,6 +246,8 @@ body {
     }
     .container-about{
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column-reverse;
         text-align: center;
         padding: 0px 16px;
@@ -265,10 +264,21 @@ body {
         margin: 0px;
     }
     #about-h1{
-        font-size: 37px;
+        font-size: 35px;
         margin: 0px;
         border-bottom: 1px solid #263238;
         padding-bottom: 8px;
+    }
+    .tech_h1{
+        font-size: 35px;
+
+    }
+    .tech_stack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 }
 
