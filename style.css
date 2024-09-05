@@ -9,7 +9,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -423,7 +422,6 @@ body {
     font-size: 15px;
     font-weight: 200;
 }
-
 
 @media screen and (max-width: 974px) {
     .hero-text {
