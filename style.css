@@ -264,6 +264,7 @@ body {
     padding: 1.5rem;
     gap: 1.5rem;
     justify-content: space-between;
+    box-shadow: 0px 1px 0px 0px rgba(80, 80, 80, 0.5);
 
 }
 .work_section_card_2{
@@ -273,6 +274,7 @@ body {
     width: 450px;
     padding: 1.5rem;
     gap: 1.5rem;
+    box-shadow: 0px 1px 0px 0px rgba(80, 80, 80, 0.5);
 
 }
 .work_section_card_img{
