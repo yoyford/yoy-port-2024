@@ -6,7 +6,6 @@
     <script src="https://kit.fontawesome.com/d7572cbe19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icons.png" type="image/x-icon">
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <style>
@@ -122,21 +121,23 @@
     <div class="lets_talk" id="lets_talk">
         <div class="lets_talk_card">
             <h1 id="lets_talk_h1">Let's Talk</h1>
-            <div class="lets_talk_card_padding">
-                <div class="row_1">
-                    <input type="text" class="input_1" id="name" placeholder="First name">
-                    <input type="text" class="input_1" id="name" placeholder="Last name">
-                </div>
-                <div class="row_2">
-                    <input type="email" class="input_2" id="email" placeholder="Email">
-                </div>
-                <div class="row_3">
-                    <input type="text" class="input_3" id="message" placeholder="Message">
-                </div>
-                <div class="row_4">
-                    <button type="button" class="submit" id="submit">Submit</button>
-                </div>
-            </div>    
+                <div class="lets_talk_card_padding">
+                    <form id="contactForm">
+                        <div class="row_1">
+                            <input type="text" class="input_1" id="name" placeholder="First name" required>
+                            <input type="text" class="input_1" id="last" placeholder="Last name" required>
+                        </div>
+                        <div class="row_2">
+                            <input type="email" class="input_2" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="row_3">
+                            <input type="text" class="input_3" id="message" placeholder="Message">
+                        </div>
+                        <div class="row_4">
+                            <button type="submit" class="submit" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>      
         </div>
         <div class="lets_talk_card_2">
             <div class="lets_talk_card_padding_2">
@@ -146,11 +147,19 @@
             </div>
         </div>    
     </div> 
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+        emailjs.init("5x_qqKvKTErkS65kA"); // Replace with your EmailJS user ID
+        })();
+    </script>
+
     <!-- footer section--> 
     <div class="footer">
         <h1 class="footer_h1">Made by Florante C. Fabroa Jr.</h1>
         <h1 class="footer_h1">© 2024 yoyfab.net</h1>
         <h1 class="footer_h1">All rights reserved.</h1>
-    </div>  
+    </div>
 </body> 
 </html>

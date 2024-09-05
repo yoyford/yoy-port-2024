@@ -44,3 +44,23 @@ document.querySelectorAll('.navbar-ul a, .mobile-menu-ul a').forEach(anchor => {
         }
     });
 });
+
+// emails se
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Use EmailJS to send the email
+    emailjs.send('service_b8mxik5', 'template_jbkwghl', {
+        name: document.getElementById('name').value,
+        last: document.getElementById('last').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    })
+    .then(function(response) {
+        alert('Your message has been sent successfully!');
+        console.log('Success!', response.status, response.text);
+    }, function(error) {
+        alert('Failed to send the message. Please try again later.');
+        console.error('Error:', error);
+    });
+});
