@@ -430,14 +430,14 @@ body {
         display: none;
     }
     .container-about p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .yoy-pic-info{
         width: 70%;
         margin: 0 auto;
     }
     .rizal_info , .personal_info{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 475px) {
