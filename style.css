@@ -164,7 +164,7 @@ body {
     min-height: 90px;
 }
 #about-h1{
-    font-size: 50px;
+    font-size: 32px;
     margin-bottom: 24px;
 }
 .container-about p{
@@ -249,7 +249,7 @@ body {
     justify-content: space-between;
 }
 .work_h1{
-    font-size: 50px;
+    font-size: 32px;
     margin-bottom: 24px;
     padding-left: 16px;
 }
