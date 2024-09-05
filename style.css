@@ -327,12 +327,14 @@ body {
     display: flex;
     flex-direction: space-between;
     gap: 1.5rem;
+    padding: 0px 16px;
 }
 .lets_talk_card{
     width: 100%;
     gap: 1.5rem;
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
 
 }
 .lets_talk_card_padding{
@@ -398,7 +400,7 @@ body {
 .lets_talk_card_2{
     display: flex;
     align-items: center;
-
+    padding: 1.5rem;
 }
 .lets_talk_card_padding_2{
     padding-left: 5rem;
@@ -406,8 +408,21 @@ body {
 .lets_talk_card_info{
     width: 90%;
 }
-
-
+.footer{
+    background-color: #263238;
+    color: #ffffff;
+    padding: 40px 0px 30px 0px;
+    text-align: center;
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.footer_h1{
+    font-size: 15px;
+    font-weight: 200;
+}
 
 
 @media screen and (max-width: 974px) {
@@ -473,6 +488,26 @@ body {
         overflow: hidden;
         width: 100%;
     }
+    .lets_talk{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lets_talk_card_padding{
+        border-right: none;
+    }
+    .lets_talk_card_2{
+        width: 100%;
+    }
+    .lets_talk_card_padding_2{
+        padding-left: 0;
+    }
+    .lets_talk_card_info{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 541px) {
     .navbar-ul {
@@ -497,6 +532,9 @@ body {
         font-size: 25px;
         margin-left: 30px;
         
+    }
+    .footer h1{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 592px) {
