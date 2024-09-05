@@ -408,8 +408,6 @@ body {
         
     }
 }
-
-
 @media screen and (max-width: 592px) {
     .hero-h1 {
         margin: 50px auto;
@@ -435,18 +433,13 @@ body {
     }
     .rizal_info , .personal_info{
         font-size: 12px;
-
     }
 }
 @media screen and (max-width: 475px) {
     .work_section_card_img{
         width: 100%;
     }
-    
-
 }
-
-
 @media screen and (max-width: 364px) {
     .hero-h1 {
         margin: 40px auto;
@@ -462,5 +455,4 @@ body {
         width: 75%;
         margin: 0 auto;
     }
-}
 }
