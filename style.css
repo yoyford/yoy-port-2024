@@ -177,9 +177,11 @@ body {
     margin-right: 150px;
     line-height: 30px;
     font-size: 13px;
+    opacity: 0.8;
 }
 .about-yoy{
     padding-left: 40px;
+    gap: 8px;
 }
 .yoy-pic-info{
     width: 400px;
@@ -241,17 +243,16 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 0 auto;
     justify-content: space-between;
 }
 .work_h1{
     font-size: 50px;
     margin-bottom: 24px;
+    padding-left: 16px;
 }
-.rizal_info{
-    margin-top: 16px;
-    opacity: 0.7;
-    line-height: 20px;
+.work_section_card_h1{
+    font-size: 30px;
+
 }
 .work_section_card{
     display: flex;
@@ -259,21 +260,41 @@ body {
     min-height: 300px;
     width: 450px;
     padding: 1.5rem;
-    margin-right: 16px;
+    gap: 1.5rem;
+    justify-content: space-between;
 
 }
-.rizal_pic{
-    width: 100%;
-    height: 100%;
-    padding-right: 24px;
+.work_section_card_2{
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    width: 450px;
+    padding: 1.5rem;
+    gap: 1.5rem;
 
+}
+.work_section_card_img{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    width: 400px;
+    overflow: hidden;
+}
+.rizal_pic{
+    width: 100%; /* Stretch the image to fit the div's width */
+    height: auto; /* Maintain the aspect ratio */
+}
+.rizal_info{
+    margin-top: 16px;
+    opacity: 0.8;
+    line-height: 30px;
+}
+.personal_info{
+    margin-top: 16px;
+    opacity: 0.8;
+    line-height: 30px;
 }
 .work_section_card_text{
     width: 100%;
-}
-.work_section_card_button{
-    margin-top: 24px;
-
+    flex-grow: 1;
 }
 .work_section_card_button button{
     padding: 15px 15px;
@@ -288,8 +309,10 @@ body {
 .work_section_card_button button:hover{
     background-color: rgb(177, 177, 177);
 }
+.work_section_card_button #live_green:hover{
+    background-color: green;
 
-
+}
 
 
 
@@ -330,7 +353,6 @@ body {
     }
     .tech_h1{
         font-size: 35px;
-
     }
     .tech_stack{
         display: flex;
@@ -343,19 +365,24 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
     }
     .work_section_body{
         display: flex;
-        align-items: center;
         justify-content: center;
     }
-    .work_section_card{
+    .work_section_card, .work_section_card_2{
         margin-top: 24px;
         margin: 0;
+        width: 100%;
         
     }
+    .work_section_card_img {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        width: 100%;
+    }
 }
-
 @media screen and (max-width: 541px) {
     .navbar-ul {
         display: none;
@@ -379,7 +406,6 @@ body {
         font-size: 25px;
         margin-left: 30px;
         
-
     }
 }
 
@@ -407,8 +433,20 @@ body {
         width: 70%;
         margin: 0 auto;
     }
+    .rizal_info , .personal_info{
+        font-size: 12px;
+
+    }
+}
+@media screen and (max-width: 475px) {
+    .work_section_card_img{
+        width: 100%;
+    }
+    
 
 }
+
+
 @media screen and (max-width: 364px) {
     .hero-h1 {
         margin: 40px auto;
@@ -424,4 +462,5 @@ body {
         width: 75%;
         margin: 0 auto;
     }
+}
 }
