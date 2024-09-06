@@ -564,6 +564,16 @@ body {
         font-size: 14px;
     }
 }
+@media screen and (max-width: 531px) {
+    .row_1 input{
+        width: 100%;
+    }
+    .lets_talk_card_padding{
+        padding: 0;
+    }
+
+
+
 @media screen and (max-width: 475px) {
     .work_section_card_img{
         width: 100%;
@@ -584,4 +594,5 @@ body {
         width: 75%;
         margin: 0 auto;
     }
+}
 }

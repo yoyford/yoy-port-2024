@@ -20,6 +20,24 @@
                 opacity: 1;
             }
         }
+        @keyframes appear {
+            from {
+            opacity: 0;
+            scale: 0.5;
+            clip-path: inset(100% 100% 0 0);
+            }
+            to {
+            opacity: 1;
+            scale: 1;
+            clip-path: inset(0 0 0 0);
+            }
+        }
+    
+        .container-about,.work_section, .lets_talk {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
     </style>
 </head>
 <body>
@@ -121,23 +139,23 @@
     <div class="lets_talk" id="lets_talk">
         <div class="lets_talk_card">
             <h1 id="lets_talk_h1">Let's Talk</h1>
-                <div class="lets_talk_card_padding">
-                    <form id="contactForm">
-                        <div class="row_1">
-                            <input type="text" class="input_1" id="name" placeholder="First name" required>
-                            <input type="text" class="input_1" id="last" placeholder="Last name" required>
-                        </div>
-                        <div class="row_2">
-                            <input type="email" class="input_2" id="email" placeholder="Email" required>
-                        </div>
-                        <div class="row_3">
-                            <input type="text" class="input_3" id="message" placeholder="Message">
-                        </div>
-                        <div class="row_4">
-                            <button type="submit" class="submit" id="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>      
+            <div class="lets_talk_card_padding">
+                <form id="contactForm">
+                    <div class="row_1">
+                        <input type="text" class="input_1" id="name" placeholder="First name" required>
+                        <input type="text" class="input_1" id="last" placeholder="Last name" required>
+                    </div>
+                    <div class="row_2">
+                        <input type="email" class="input_2" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="row_3">
+                        <input type="text" class="input_3" id="message" placeholder="Message" required>
+                    </div>
+                    <div class="row_4">
+                        <button type="submit" class="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="lets_talk_card_2">
             <div class="lets_talk_card_padding_2">
@@ -149,12 +167,6 @@
     </div> 
     <script src="script.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-        emailjs.init("5x_qqKvKTErkS65kA"); // Replace with your EmailJS user ID
-        })();
-    </script>
-
     <!-- footer section--> 
     <div class="footer">
         <h1 class="footer_h1">Made by Florante C. Fabroa Jr.</h1>

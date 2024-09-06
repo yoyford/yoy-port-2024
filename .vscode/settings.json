@@ -8,5 +8,6 @@
         "fontsize",
         "lastname",
         "yoyfab"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

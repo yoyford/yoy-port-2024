@@ -46,10 +46,15 @@ document.querySelectorAll('.navbar-ul a, .mobile-menu-ul a').forEach(anchor => {
 });
 
 // emails se
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+(function(){
+    emailjs.init("5x_qqKvKTErkS65kA"); // Replace with your actual User ID
+})();
 
-    // Use EmailJS to send the email
+ // Add event listener for form submission
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+     event.preventDefault(); // Prevent default form submission
+
+     // Send email using EmailJS
     emailjs.send('service_b8mxik5', 'template_jbkwghl', {
         name: document.getElementById('name').value,
         last: document.getElementById('last').value,
