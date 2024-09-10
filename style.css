@@ -442,6 +442,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 2px;
 }
 .footer_h1{
     font-size: 15px;
