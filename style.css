@@ -58,6 +58,8 @@ body {
 .navbar-ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .navbar-ul li {
     list-style: none;
@@ -161,6 +163,13 @@ body {
     flex-direction: row;
     align-items: flex-start;
     min-height: 90px;
+}
+.resume-button{
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    background: #000000;
 }
 #about-h1{
     font-size: 32px;
