@@ -165,12 +165,23 @@ body {
     align-items: flex-start;
     min-height: 90px;
 }
-.resume-button{
+#resume-button{
     text-align: center;
     padding: 1rem;
     text-decoration: none;
     color: white;
     background: #000000;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0%;
+    left: 3%;
+    border-radius: 25px;
+
+}
+#resume{
+    color: white;
+    background: #000000;
+    text-decoration: none;
 }
 #about-h1{
     font-size: 32px;
@@ -519,6 +530,9 @@ body {
     }
     .lets_talk_card_info{
         text-align: center;
+    }
+    #resume-button{
+        position: static;
     }
 }
 @media screen and (max-width: 541px) {
