@@ -5,6 +5,7 @@
     --main-font: "Poppins", sans-serif; 
     --second-font: "Syne", sans-serif;
     --navbar-color: #727272;
+    --background: rgb(22,25,52)
 }
 html {
     scroll-behavior: smooth;
